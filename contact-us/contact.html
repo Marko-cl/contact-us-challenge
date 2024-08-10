@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+    <body  >
+        <div id="text">
+            <div id="contact-us">
+                <h1 style="font-weight: bold">Contact us</h1>
+                <p>lupri lupri</p>
+            </div>
+            <div id="adres">
+                <div class="sign">
+                <div class="adres1">
+                    3527 Kovacek Port, Gerardview, TX 50655
+                </div>
+                <div class="romb"></div></div>
+                <div style="font-weight: bold" class="dot"><h1 class="dot1">.</h1></div>
+            </div>
+        </div>
+        <div id="contact-table" >
+            <div id="send-message" >
+                <h3>Send us a Message</h3>
+                <br />
+                <div class="inputt">
+                    <input
+                        class="input"
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        onclick="boddy()"
+                    /><br /><br />
+                    <input
+                        class="input"
+                        type="text"
+                        id="email"
+                        email="email"
+                        placeholder="Email"
+
+                        onclick="boddy()"
+                    /><br /><br />
+                    <input
+                        class="input"
+                        type="text"
+                        id="number"
+                        number="number"
+                        placeholder="Phone"
+                        onclick="boddy()"
+                    /><br /><br />
+                </div>
+                <input
+                    type="text"
+                    id="box-sms"
+                    box-sms="box-sms"
+                    placeholder="Message..."
+                    onclick="myF()"
+                />
+                <input
+                    class="submit"
+                    type="submit"
+                    id="sub"
+                    sub="sub"
+                    value="Submit"
+                />
+            </div>
+        </div>
+    </body>
+    <style>
+        body {
+            background-image: url(back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "text contact-table";
+            height: 100vh;overflow: hidden;
+        }
+       
+        #contact-table {
+            grid-area: contact-table;
+        }
+
+        #send-message {
+            height: 700px;
+            width: 500px;
+            background-color: white;
+            margin-top: 10%;
+            border-radius: 30px;
+            color: black;
+            margin: 100px;
+        }
+
+        h3 {
+            padding-top: 30px;
+            padding-left: 50px;
+        }
+        .input {
+            padding-right: 250px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            opacity: 0.5;
+        }
+
+        .inputt {
+            padding-left: 50px;
+        }
+        #box-sms {
+            color: black;
+            padding-bottom: 20px;
+            padding-left: 5px;
+            padding-top: 10px;
+            width: 400px;
+            border: 1px solid black;
+            margin: auto;
+
+            opacity: 0.5;
+            margin-left: 50px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        .submit {
+            margin-left: 50px;
+            width: 410px;
+            margin-top: 80px;
+            padding: 8px;
+            border-radius: 50px;
+            border: 1px solid pink;
+            background-color: pink;
+            cursor: pointer;
+        }
+
+        #text {
+            grid-area: text;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "contact-us"
+                "adres";
+        }
+
+#contact-us{
+    grid-area: contact-us;
+ 
+   transform: translateY(50%);
+}
+
+#contact-us h1{margin-left: 100px;}
+#contact-us p{
+
+margin-left: 100px;
+}
+.adres1{
+    border: 1px solid pink;padding: 10px;border-radius: 15px;background-color: palevioletred;width: 400px;
+}
+.dot{
+    align-items: center;justify-content: center;justify-items: center;text-align: center;
+}
+
+.dot1{
+    text-shadow: 2px 2px 8px palevioletred;color: palevioletred;
+}
+
+.romb{
+width: 50px;
+position: absolute;
+height: 24px;
+overflow: hidden;
+margin-left: 84px;rotate: 180deg;margin-left: 195px;
+}
+.romb:before{
+content: "";
+width: 50px;
+position: absolute;
+height: 50px;
+-webkit-transform: rotate(45deg);
+border: 1px solid red;
+top: 12px;
+border: 2px solid;
+z-index: 10;
+background: palevioletred;
+}
+
+
+
+    </style>
+    <script>
+        function myF(){
+
+            if(myF){
+document.getElementById("box-sms").style.paddingBottom="200px";
+document.getElementById("box-sms").style.transitionDuration="1s";
+           
+            }
+         
+
+
+            
+        }
+
+        function boddy(){
+if(boddy){
+    document.getElementById("box-sms").style.paddingBottom="20px";
+
+}
+          }
+
+    </script>
+</html>
